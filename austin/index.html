@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fartbin is back???????????</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0% { color: white; }
+            50% { color: red; }
+            75% { color: blue }
+            100% { color: white; }
+        }
+
+        /* Styling for images at the top */
+        .top-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .top-images img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #cacaca;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(110, 110, 110);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(68, 68, 68);
+        }
+
+        html, body {
+            overflow: auto;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scrollbar-width: none;
+        }
+
+        audio {
+            display: none;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #cacaca;
+        }
+
+        html {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: url(./files/cursor.png) 16 16, auto !important;
+            animation: flash 1s infinite;
+        }
+
+        @font-face {
+            font-family: 'main';
+            src: url('fonts/main.ttf');
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            background-color: #000000;
+            min-height: 97vh;
+            border-radius: 10px;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin-bottom: -84px;
+            border-radius: 10px;
+            color: #060606;
+        }
+
+        button {
+            background-color: var(--btn-bg);
+            border: var(--btn-border);
+            border-radius: 15px;
+            padding: 15px;
+            font-size: clamp(18px, 2vw, 20px);
+            color: var(--btn-color);
+            cursor: url(./files/cursor.png) 16 16, auto !important;
+            font-family: userlol;
+            margin: 5px;
+            transition: all 0.2s ease-in-out;
+            display: inline;
+        }
+
+        .glowing-text {
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        #blur-box1 {
+            display: none;
+            position: absolute;
+            border-radius: 10px;
+            width: 95%;
+            height: 93%;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(255, 255, 255, 0.774);
+            text-align: center;
+            animation: fadein 1s forwards;
+            animation: flash 1s infinite;
+        }
+
+        #video-background {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: fadein 1s forwards;
+        }
+
+        textarea {
+            background-color: #545454;
+            border: none;
+            height: 50px;
+            padding: 10px 5px;
+            color: rgb(189, 79, 79);
+            outline: none;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .next {
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            position: absolute;
+            font-weight: normal;
+            font-size: 20px;
+            transform: translate(-50%, -50%);
+            font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="button"><b class="next glowing-text">fartbin.com</b></div>
+    <div id="blur-box1">
+         
+    <div class="top-images">
+        <img src="files/austin.png" alt="Image 1">
+        <img src="files/house.png" alt="Image 2">
+    </div>
+    <title>Austin GrimesK</title>
+        <pre>
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+          
+   ▄████████ ███    █▄     ▄████████     ███      ▄█  ███▄▄▄▄           ▄██████▄     ▄████████  ▄█    ▄▄▄▄███▄▄▄▄      ▄████████    ▄████████ 
+   ███    ███ ███    ███   ███    ███ ▀█████████▄ ███  ███▀▀▀██▄        ███    ███   ███    ███ ███  ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███ 
+   ███    ███ ███    ███   ███    █▀     ▀███▀▀██ ███▌ ███   ███        ███    █▀    ███    ███ ███▌ ███   ███   ███   ███    █▀    ███    █▀  
+   ███    ███ ███    ███   ███            ███   ▀ ███▌ ███   ███       ▄███         ▄███▄▄▄▄██▀ ███▌ ███   ███   ███  ▄███▄▄▄       ███        
+ ▀███████████ ███    ███ ▀███████████     ███     ███▌ ███   ███      ▀▀███ ████▄  ▀▀███▀▀▀▀▀   ███▌ ███   ███   ███ ▀▀███▀▀▀     ▀███████████ 
+   ███    ███ ███    ███          ███     ███     ███  ███   ███        ███    ███ ▀███████████ ███  ███   ███   ███   ███    █▄           ███ 
+   ███    ███ ███    ███    ▄█    ███     ███     ███  ███   ███        ███    ███   ███    ███ ███  ███   ███   ███   ███    ███    ▄█    ███ 
+   ███    █▀  ████████▀   ▄████████▀     ▄████▀   █▀    ▀█   █▀         ████████▀    ███    ███ █▀    ▀█   ███   █▀    ██████████  ▄████████▀  
+                                                                                     ███    ███                                                
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+ Austin GrimesK fuck nigga
+ 
+ 
+ His info;
+     Austin Grimes
+     Email: agrims659@outlook.com
+ 
+     Age: 14 (turning 15 in december)
+ 
+     Face Pics:
+         https://imgur.com/a/ERmm66f
+ 
+     Highschool: https://dps.k12.oh.us/belmont-high-school/
+     Office: 937-542-6460
+     Fax: 937-542-6461
+ 
+ Address: 23 Virginia Ave, Dayton, OHIO 45410
+     
+ --------------------
+ 
+ Dad: 
+     Kenneth W Fisher Sr
+     Email - lilbud97.kf@gmail.com, kittenspice@yahoo.com
+     Address: 23 Virginia Ave, Dayton, OH 45410
+     Phone# - (937) 559-8873 (AT&T Mobility, Dayton ohio), (937) 301-7199 (AT&T Mobility, Dayton ohio), (937) 718-5157 (AT&T Mobility, Dayton ohio), (832) 731-7321 (T-Mobile, Houston, Texas), (513) 253-5268 (T-Mobile, Cincinnati, OHIO)
+     Linked in: https://www.linkedin.com/in/rachel-white-7488197b ~ linked to Kenneth with email kittenspice@yahoo.com
+     Facebook: https://www.facebook.com/bandiakat ~ Profile linked to Kenneth with email kittenspice@yahoo.com
+     twitter: https://x.com/kittenspice
+ --------------------
+ Mom: Narvella Fisher
+ Email - narvellafisher01@gmail.com
+ Phone# - (937)-301-7199
+ Address: 23 Virginia Ave, Dayton, OH 45410
+ prev addys: 1653 Huffman Ave. Dayton, OH 45490 Recorded in 2018, 1653 Huffman Ave. Dayton, OH 45403 Recorded in 2017.
+ 
+ Demographics:
+ Ethnicity	Western European
+ Language	English
+ Religion	Protestant
+ Family:
+ Marital Status	Single
+ Children	4
+ 
+ Mortgages & Refinances:
+ Type	FHA
+ Amount	$68,000,000
+ Dated	September 15th, 2017
+ LTV	52%
+ --------------------
+ Lisa M Fisher
+ 
+ Address: 23 Virginia Ave, Dayton, OH 45410
+ Age; 44
+ Linked Emails And Numbers; 
+ (937) 301-7199
+ Dayton, OHAT&T Mobility
+ Found in 1 data source 4 months ago
+ (937) 245-0000
+ Dayton, OHAT&T Mobility
+ Found in 1 data source 4 months ago
+ (937) 301-0000
+ Dayton, OHVerizon Wireless
+ Found in 1 data source 4 months ago
+ (937) 245-3051
+ Dayton, OHAT&T Mobility
+ Found in 1 data source 4 months ago
+ (937) 220-9533
+ Dayton, OHAT&T Ohio
+ Found in 1 data source 4 months ago
+ (937) 301-7198
+ Dayton, OHAT&T Mobility
+ Found in 1 data source 4 months ago
+ (937) 256-1952
+ Dayton, OHAT&T Ohio
+ Found in 1 data source 4 months ago
+ (937) 293-5719
+ Dayton, OHAT&T Ohio
+ Found in 1 data source 4 months ago
+ (937) 223-3938
+ Dayton, OHAT&T Ohio
+ Found in 1 data source 4 months ago
+ (937) 256-0965
+ Dayton, OHAT&T Ohio
+ Found in 1 data source 4 months ago
+ lucious26@gmail.com
+ Commercial4 social profiles
+ Found in 1 data source 3 months ago
+ luciouslisa81@yahoo.com
+ Commercial3 social profiles
+ Found in 1 data source 3 months ago
+ del20031973@gmail.com
+ Commercial1 social profile
+ Found in 1 data source 4 months ago
+ narvellafisher01@gmail.com
+ Commercial2 social profiles
+ Found in 1 data source 4 months ago
+ br8kalegridin@yahoo.com
+ Commercial1 social profile
+ Found in 1 data source 5 years ago
+ lucious26@yahoo.com
+ Commercial1 social profile
+ Found in 1 data source 5 years ago
+ 
+ --------------------
+ Other Relatives (pretty unimportant)
+ ----------------------------------------
+  - Carlos Chisholm 
+      Age 50
+  - Christine Chadwell
+      Age 54
+  - Claude Chadwell
+     Age 59
+  - Daniel Chadwell
+      Age 41
+  - Debra Smith
+     Age 50
+  - Frank Fisher
+      Age 60
+  - Helen Chadwell
+     Age 81
+  - James Chadwell
+      Age 56
+  - Kenneth Fisher
+     Age 27
+ 
+     Thomas L Fisher, Age 52
+ 
+     Tom Fisher, Age 52
+ 
+     Rowana M Fisher, Age 40
+ 
+  - Lisa Vititoe
+     Age 56
+ ----------------------------------------
+ ---------------CREDITS START------------
+
+ ██╗ ██████╗ ██████╗     ██╗ ██╗ ███████╗██╗   ██╗██╗  ██╗███████╗███████╗ ██████╗
+ ██║██╔════╝██╔════╝    ████████╗██╔════╝██║   ██║██║ ██╔╝██╔════╝██╔════╝██╔════╝
+ ██║██║     ██║         ╚██╔═██╔╝█████╗  ██║   ██║█████╔╝ ███████╗█████╗  ██║     
+ ██║██║     ██║         ████████╗██╔══╝  ██║   ██║██╔═██╗ ╚════██║██╔══╝  ██║     
+ ██║╚██████╗╚██████╗    ╚██╔═██╔╝██║     ╚██████╔╝██║  ██╗███████║███████╗╚██████╗
+ ╚═╝ ╚═════╝ ╚═════╝     ╚═╝ ╚═╝ ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝
+ 
+ ██╗  ██╗███████╗████████╗ █████╗ 
+ ██║ ██╔╝██╔════╝╚══██╔══╝██╔══██╗
+ █████╔╝ █████╗     ██║   ███████║
+ ██╔═██╗ ██╔══╝     ██║   ██╔══██║
+ ██║  ██╗███████╗   ██║   ██║  ██║
+ ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝
+ 
+ ███████╗ █████╗ ██████╗ ████████╗██████╗  ██████╗ ██╗   ██╗███████╗
+ ██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔═══██╗╚██╗ ██╔╝██╔════╝
+ █████╗  ███████║██████╔╝   ██║   ██████╔╝██║   ██║ ╚████╔╝ ███████╗
+ ██╔══╝  ██╔══██║██╔══██╗   ██║   ██╔══██╗██║   ██║  ╚██╔╝  ╚════██║
+ ██║     ██║  ██║██║  ██║   ██║   ██████╔╝╚██████╔╝   ██║   ███████║
+                                                                 ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝                                                                 
+ 
+ ███████╗ █████╗ ██████╗ ████████╗██████╗ ██╗███╗   ██╗    ██████╗ ██████╗ ███╗   ███╗
+ ██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║████╗  ██║   ██╔════╝██╔═══██╗████╗ ████║
+ █████╗  ███████║██████╔╝   ██║   ██████╔╝██║██╔██╗ ██║   ██║     ██║   ██║██╔████╔██║
+ ██╔══╝  ██╔══██║██╔══██╗   ██║   ██╔══██╗██║██║╚██╗██║   ██║     ██║   ██║██║╚██╔╝██║
+ ██║     ██║  ██║██║  ██║   ██║   ██████╔╝██║██║ ╚████║██╗╚██████╗╚██████╔╝██║ ╚═╝ ██║
+                                                                    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝                                                                    
+
+ ████████╗██████╗  █████╗  ██████╗███████╗██████╗ 
+ ╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗
+    ██║   ██████╔╝███████║██║     █████╗  ██████╔╝
+    ██║   ██╔══██╗██╔══██║██║     ██╔══╝  ██╔══██╗
+    ██║   ██║  ██║██║  ██║╚██████╗███████╗██║  ██║
+    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═╝
+ _____                                       _____ 
+( ___ )                                     ( ___ )
+ |   |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   | 
+ |   |        ____ _____ ____ ____           |   | 
+ |   |       |___  | ___|_  _|___ \          |   | 
+ |   |          / /|___ \ \/ / __) |         |   | 
+ |   |         / /  ___) >  < / __/          |   | 
+ |   |        /_/  |____/_/\_\_____|         |   | 
+ |   |                                       |   | 
+ |___|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|___| 
+(_____)             TRACER <3               (_____)
+                                                  
+---------------CREDITS END------------
+                                  
+ 
+        </pre>
+    </div>
+
+    <audio id="audio-background" loop muted autoplay>
+        <source src="files/sa.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            var button = this;
+            button.style.animation = "fadeout 1s forwards";
+
+            var bgAudio = document.getElementById("audio-background");
+            document.getElementById("blur-box1").style.display = "block";
+            bgAudio.src = getRandomSong();  
+            bgAudio.load();
+            bgAudio.play();
+            bgAudio.muted = false; // Unmute the audio
+            bgAudio.volume = 0.1;  // Set the volume to half
+        });
+
+        function getRandomSong() {
+            const songs = [
+            'files/sa.mp3',
+                'files/garbage.mp3',
+                'files/leak.mp3',
+                'files/bowt.mp3',
+                'files/step.mp3',
+                'files/danger.mp3',
+                'files/ccmw.mp3',
+                'files/ida.mp3',
+                'files/S-GANG.mp3',
+                'files/tf.mp3',
+                'files/mc.mp3'
+            ];
+            return songs[Math.floor(Math.random() * songs.length)];
+        }
+    </script>
+</body>
+</html>

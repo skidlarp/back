@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fartbin is back???????????</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0% { color: rgb(255, 255, 255); }
+            50% { color: red; }
+            75% { color: blue }
+            100% { color: white; }
+        }
+
+        /* Styling for images at the top */
+        .top-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .top-images img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #cacaca;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(110, 110, 110);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(68, 68, 68);
+        }
+
+        html, body {
+            overflow: auto;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html {
+            scrollbar-width: none;
+        }
+
+        audio {
+            display: none;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #cacaca;
+        }
+
+        html {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: url(./files/cursor.png) 16 16, auto !important;
+            animation: flash 1s infinite;
+        }
+
+        @font-face {
+            font-family: 'main';
+            src: url('fonts/main.ttf');
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            background-color: #000000;
+            min-height: 97vh;
+            border-radius: 10px;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin-bottom: -84px;
+            border-radius: 10px;
+            color: #060606;
+        }
+
+        button {
+            background-color: var(--btn-bg);
+            border: var(--btn-border);
+            border-radius: 15px;
+            padding: 15px;
+            font-size: clamp(18px, 2vw, 20px);
+            color: var(--btn-color);
+            cursor: url(./files/cursor.png) 16 16, auto !important;
+            font-family: userlol;
+            margin: 5px;
+            transition: all 0.2s ease-in-out;
+            display: inline;
+        }
+
+        .glowing-text {
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        #blur-box1 {
+            display: none;
+            position: absolute;
+            border-radius: 10px;
+            width: 95%;
+            height: 93%;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(255, 255, 255, 0.774);
+            text-align: center;
+            animation: fadein 1s forwards;
+            animation: flash 1s infinite;
+        }
+
+        #video-background {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: fadein 1s forwards;
+        }
+
+        textarea {
+            background-color: #545454;
+            border: none;
+            height: 50px;
+            padding: 10px 5px;
+            color: rgb(189, 79, 79);
+            outline: none;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .next {
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            position: absolute;
+            font-weight: normal;
+            font-size: 20px;
+            transform: translate(-50%, -50%);
+            font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="button"><b class="next glowing-text">fartbin.com</b></div>
+    <div id="blur-box1">
+         
+    <div class="top-images">
+        <img src="files/sav.gif" alt="Image 1">
+        <img src="files/sav2.gif" alt="Image 2">
+        <img src="files/sav3.png" alt="Image 3">
+        <img src="files/sav4.png" alt="Image 4">
+        <img src="files/sav5.png" alt="Image 5">
+    </div>
+ 
+        <pre>
+===========================================================================
+Savannah Hemphill's Demise
+===========================================================================
+
+===========================================================================
+Reasoning
+===========================================================================
+[Savannah Hemphill age baited Mr Belding, making him believe she was 18. She tried to get me to leak his address and everything, 
+she also tried to ruin my (drips) relationship because she got mad that I led her on and thought I liked her. (LOL?)
+You're a fat, ugly, 15 year old that cant stop trying to get with older men. Job applications are begging for you Affliction.]
+
+---------------------------------------------------------------------------
+TABLE OF CONTENTS
+---------------------------------------------------------------------------
+1. [Savannah Hemphill]
+2. [Andanette Monique Hemphill]
+3. [Louise B Guerra]
+4. [Sonya Marie Guerra]
+5. [Richard L Hemphill]
+6. [Credits]
+7. [Notes]
+---------------------------------------------------------------------------
+1. [Savannah Hemphill]
+---------------------------------------------------------------------------
+[Description; Detailed content for the first main section]
+
+[Alias; Affliction]
+[Name; Savannah Hemphill]
+[Age; 15]
+[Number; 573-842-9082]
+[Address; 19354 Laney Rd, Waynesville, MO 65583]
+[Socials; </pre><a href="https://tiktok.com/@prblms_huzz">tiktok</a> <a href="https://open.spotify.com/user/31aqunbfabe4dldmbtfljff5pusq">Spotify</a>  <pre> ] 
+    
+---------------------------------------------------------------------------
+2. [Andanette Monique Hemphill]
+---------------------------------------------------------------------------
+[Description; Andanette Monique Hemphill was born in March 1989, lives in Waynesville, MO and is also known as Andanette M Aguilera, Andanette Aguilara or Monique Hemphill.]
+
+[Name; Andanette Monique]
+[Age; 35]
+[Address; 19354 Laney Rd, Waynesville, MO 65583]
+[Past Addresses; 19354 Laney Rd WAYNESVILLE, MO 65583, 28637 S Maple St ROMULUS, MI 48174, 20388 Wick Rd TAYLOR, MI 48180, 
+160 Barkley Pl FORT LEONARD WOOD, MO 65473,5119 N Ashley Ln STOCKTON, CA 95215, 
+6135 Busch Ct, Apt A FORT JOHNSON, LA 71459, 3200 Hiawatha Trl FORT WORTH, TX 76135, 184 Bell Richard Ave, FORT JOHNSON, LA 71459, 
+1657 Sutro Ave STOCKTON, CA 95205, 527 N American St STOCKTON, CA 95202 ]
+[Linked Numbers;  (803) 239-3987 Columbia, SCT-Mobile, (209) 688-1992 Stockton, CA MetroPCS, (337) 213-1030 Leesville, LAOnvoy, (209) 922-1133 Stockton, CAMetroPCS,
+(803) 239-8748 Columbia, SC Verizon Wireless, (209) 271-2512 Stockton, CA MetroPCS, (337) 404-7419 Leesville, LA Suddenlink Communications, (585) 503-7754 Rochester, NYT-Mobile,
+(209) 513-6707 Stockton, CA MetroPCS, (209) 941-2330 Stockton, CA AT&T California]
+[Linked Emails; justiceaguilera@yahoo.com, richardpv1@yahoo.com, j2aaguilera@verizon.net, gbrown1@lycos.com, andanetteaguilera@yahoo.com, aaguilera@verizon.net, gbrown1@coastal.edu, tsedey22@yahoo.com, msantoli@hotmail.com]
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+3. [Louise B Guerra]
+---------------------------------------------------------------------------
+[Description; Louise B Guerra, Age 73, Who was born in September 1951, lives in Taylor, MI and is also known as Louisa Guerra, Lorise Guerra or Louise Gerra.]
+
+[Name; Louise B Guerra]
+[Age; 73]
+[Address; 44 W Worth St Stockton, CA]
+[Past Addresses;  20388 Wick Rd TAYLOR, MI 48180, 44 W Worth St STOCKTON, CA 95206, 24406 Wick Rd TAYLOR, MI 48180,  2373 Dry Creek Way STOCKTON, CA 95206, 
+3763 Moore Pl DETROIT, MI 48208, 5204 Hereford St DETROIT, MI 48224, 2409 Phelps St STOCKTON, CA 95206,  1657 Sutro Ave STOCKTON, CA 95205, 1762 School Ave STOCKTON, CA 95205,
+311 S Coolidge Ave STOCKTON, CA 95215, 610 N Hunter St STOCKTON, CA 95202, 2227 E 8th St STOCKTON, CA 95206, 7936 Montauban Ave STOCKTON, CA 95210, 1835 E Marsh St STOCKTON, CA 95205,
+3003 Janessa Way STOCKTON, CA 95205, 406 N E St STOCKTON, CA 95205, 221 Quincy St, Apt 38 STOCKTON, CA 95207, 435 S Pilgrim St STOCKTON, CA 95205, 2392 E Market St STOCKTON, CA 95205,
+ 1917 E 12th St STOCKTON, CA 95206]
+[Linked Numbers; (209) 688-1992 Stockton, CA MetroPCS, (313) 482-1592 Detroit, MI MetroPCS, (209) 466-5961 Stockton, CA AT&T California, 
+(313) 436-1721 Dearborn, MI Comcast, (209) 466-3515 Stockton, CA AT&T California, (313) 285-9660 Detroit, MIComcast, (209) 941-2330 Stockton, CA AT&T ]
+[Linked Emails; lguerra20488@gmail.com, lguerra20388@gmail.com, louiseguerra@rocket.com, l.guerra20388@gmail.com, louiseguerra@rocketmail.com]
+
+---------------------------------------------------------------------------
+4. [Sonya Marie Guerra]
+---------------------------------------------------------------------------
+[Description; Sonya Marie Guerra was born in June 1981, lives in Taylor, MI and is also known as Sunya M Guerra, Sonia Aguilara or Sonya Gurra.]
+
+[Name; Sonya Marie Guerra]
+[Age; 43]
+[Address; 24406 Wick Rd, Taylor, MI]
+[Past Addresses;  ]
+[Linked Numbers; (313) 753-3904 Detroit, MI MetroPCS, (313) 640-1308 Grosse Pointe, MI AT&T Michigan, 
+(209) 481-3347 Manteca, CA AT&T Mobility, (209) 944-9237 Stockton, CA AT&T California, (209) 469-3816 Stockton, CA AT&T California, 
+(209) 941-2330 Stockton, CA AT&T California, (209) 477-4125 Stockton, CA AT&T California
+]
+[Linked Emails; all11ofu@att.net, thebrat26@yahoo.com, all11ofus11@gmail.com, all11ofus@att.net, jessenawatani14@yahoo.com]
+
+---------------------------------------------------------------------------
+5. [Richard L Hemphill]
+---------------------------------------------------------------------------
+[Description; Sonya Marie Guerra was born in June 1981, lives in Taylor, MI and is also known as Sunya M Guerra, Sonia Aguilara or Sonya Gurra.]
+
+[Name; Richard L Hemphill]
+[Age; 43]
+[Address; 184 Bell Richard Ave, Fort Johnson, LA, 6135 Busch Ct, Apt A FORT JOHNSON, LA 71459]
+[Past Addresses; 184 Bell Richard Ave FORT JOHNSON, LA 71459 6135 Busch Ct, Apt A FORT JOHNSON, LA 71459 ]
+[Linked Numbers; (337) 404-3046 Leesville, LASuddenlink Communications]
+[Linked Emails; richardpv1@yahoo.com]
+[Name SnusBase Search: name RICHARD L HEMPHILL
+lastname HEMPHILL
+firstname RICHARD
+middlename L
+proofverified
+date_of_birth 09/17/1937
+date_of_death 08/16/2004
+]
+[Email SnusBase Search;
+#1
+ANTIPUBLIC_COMBOLIST_1865M_2018
+richardpv1@yahoo.com:34880
+richardpv1@yahoo.com:wow2008
+richardPv1@yahoo.com:wow2008
+Richardpv1@yahoo.com:34880rh
+ANTIPUBLIC_COMBOLIST_557M_2016
+richardpv1@yahoo.com:34880
+richardpv1@yahoo.com:wow2008
+richardPv1@yahoo.com:wow2008
+Richardpv1@yahoo.com:34880rh
+BREACHCOMP_COMBOLIST_1400M_2020
+richardpv1@yahoo.com:34880
+richardpv1@yahoo.com:wow2008
+richardPv1@yahoo.com:wow2008
+Richardpv1@yahoo.com:34880rh
+COLLECTION1_COMBOLIST_1212M_2019
+richardpv1@yahoo.com:wow2008
+RichardPv1@yahoo.com:07112007
+#2
+TNAFLIX_COM_1M_ADULT_062022
+(1 result)
+username RichardPv1
+email RichardPv1@yahoo.com
+lastip 2130706433
+password 07112007
+MYSPACE_COM_357M_SOCIAL_2008
+(1 result)
+username rickpv1
+email richardPv1@yahoo.com
+hash DF6CEE8A170DD66488640F7A39A26A0DBEDF4F48
+2844DATABASES_NA_218M_COMPILATION_2018
+(1 result)
+email Richardpv1@yahoo.com
+password 34880rh
+LAST_FM_41M_MUSIC_2012
+(2 results)
+1/2
+username Kaizer209
+email Richardpv1@yahoo.com
+hash c866de0714e3367992a5c6fb12603aa1
+34880rh
+created 2010-03-23 00:45:43f
+2/2
+username Hemp209
+email richardpv1@yahoo.com
+hash c736b91eecdcfc795549afee33c96ce4
+34880
+created 2011-11-29 17:07:40f
+DDO_COM_2M_GAMING_2013
+(1 result)
+username RichardPv1
+email Richardpv1@yahoo.com
+lastip 10.64.97.10
+hash a81e7249c2722d4356c269e24467a3d9
+34880rh
+salt 5&.:
+DAILYMOTION_COM_87M_ENTERTAINMENT_2017
+(1 result)
+username Richardpv1
+email Richardpv1@yahoo.com
+]
+
+1
+184 Bell Richard Ave
+FORT JOHNSON, LA 714592011 - 2011
+Richard lived in this home. Previous residents are Thomas M., Lindsay H. and 1 other.
+Found in 3 data sources 5 years ago
+View Property
+townhouse.svg
+2
+6135 Busch Ct, Apt A
+FORT JOHNSON, LA 714592011 - 2011
+
+
+
+---------------------------------------------------------------------------
+6. [CREDITS]
+---------------------------------------------------------------------------
+ 
+
+███████╗███╗   ██╗ █████╗ ██████╗ ██████╗  ██████╗ 
+██╔════╝████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔═══██╗
+███████╗██╔██╗ ██║███████║██████╔╝██████╔╝██║   ██║
+╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██╔═══╝ ██║   ██║
+███████║██║ ╚████║██║  ██║██║     ██║     ╚██████╔╝
+╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝      ╚═════╝ 
+                                                                                                                      
+
+██████╗ ██████╗ ██╗██████╗ ███████╗
+██╔══██╗██╔══██╗██║██╔══██╗██╔════╝
+██║  ██║██████╔╝██║██████╔╝███████╗
+██║  ██║██╔══██╗██║██╔═══╝ ╚════██║
+██████╔╝██║  ██║██║██║     ███████║
+╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     ╚══════╝
+
+
+
+███████╗ █████╗ ██████╗ ████████╗██████╗  ██████╗ ██╗   ██╗███████╗
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔═══██╗╚██╗ ██╔╝██╔════╝
+█████╗  ███████║██████╔╝   ██║   ██████╔╝██║   ██║ ╚████╔╝ ███████╗
+██╔══╝  ██╔══██║██╔══██╗   ██║   ██╔══██╗██║   ██║  ╚██╔╝  ╚════██║
+██║     ██║  ██║██║  ██║   ██║   ██████╔╝╚██████╔╝   ██║   ███████║
+                                                                ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝                                                                 
+
+███████╗ █████╗ ██████╗ ████████╗██████╗ ██╗███╗   ██╗    ██████╗ ██████╗ ███╗   ███╗
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║████╗  ██║   ██╔════╝██╔═══██╗████╗ ████║
+█████╗  ███████║██████╔╝   ██║   ██████╔╝██║██╔██╗ ██║   ██║     ██║   ██║██╔████╔██║
+██╔══╝  ██╔══██║██╔══██╗   ██║   ██╔══██╗██║██║╚██╗██║   ██║     ██║   ██║██║╚██╔╝██║
+██║     ██║  ██║██║  ██║   ██║   ██████╔╝██║██║ ╚████║██╗╚██████╗╚██████╔╝██║ ╚═╝ ██║
+                                                                   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝                                                                    
+
+
+                                   
+                                                                   
+                                          
+---------------------------------------------------------------------------
+7. [NOTES]
+---------------------------------------------------------------------------
+ 
+
+===========================================================================
+THE END
+===========================================================================
+ 
+                                  
+ 
+        </pre>
+    </div>
+
+    <audio id="audio-background" loop muted autoplay>
+        <source src="files/sa.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            var button = this;
+            button.style.animation = "fadeout 1s forwards";
+
+            var bgAudio = document.getElementById("audio-background");
+            document.getElementById("blur-box1").style.display = "block";
+            bgAudio.src = getRandomSong();  
+            bgAudio.load();
+            bgAudio.play();
+            bgAudio.muted = false; // Unmute the audio
+            bgAudio.volume = 0.1;  // Set the volume to half
+        });
+
+        function getRandomSong() {
+            const songs = [
+                'files/sa.mp3',
+                'files/garbage.mp3',
+                'files/leak.mp3',
+                'files/bowt.mp3',
+                'files/step.mp3',
+                'files/danger.mp3'
+            ];
+            return songs[Math.floor(Math.random() * songs.length)];
+        }
+    </script>
+</body>
+</html>
